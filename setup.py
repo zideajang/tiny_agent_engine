@@ -19,6 +19,6 @@ setup(
     author="zidea",
     author_email="zidea",
     keywords="agent multi-role multi-agent programming gpt llm",
-    packages=find_packages(exclude=["contrib", "docs", "examples"]),
+    packages=find_packages(exclude=["contrib", "docs", "examples","resources"]),
     python_requires=">=3.9"
 )
