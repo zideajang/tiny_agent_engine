@@ -8,7 +8,6 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, "README.md"), encoding="utf-8") as f:
     long_description = f.read()
 
-
 setup(
     name="azentengine",
     version="1.0.0",
@@ -19,6 +18,8 @@ setup(
     author="zidea",
     author_email="zidea",
     keywords="agent multi-role multi-agent programming gpt llm",
-    packages=find_packages(exclude=["contrib", "docs", "examples","resources"]),
+    packages=find_packages(
+        include=["azentengine"],
+        exclude=["contrib", "docs", "examples","resources","workdir","logs","test"]),
     python_requires=">=3.9"
 )

@@ -162,3 +162,6 @@ examples/nb/
 workspace/*
 *.mmd
 tmp
+examples/doc/*.xlsx
+*.xlsx
+workdir/*
