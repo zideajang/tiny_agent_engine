@@ -46,3 +46,9 @@ class ConversableAgent(LLMAgent):
         default_auto_reply: Union[str, Dict] = "",
         description: Optional[str] = None,
     ):
+
+    code_execution_config = (
+        code_execution_config.copy() if hasattr(code_execution_config, "copy") else code_execution_config
+    )
+
+    self._name = name
